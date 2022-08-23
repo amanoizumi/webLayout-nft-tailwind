@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>藝術家介紹</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Paytone+One&family=Squada+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./assets/style/all.css" />
+  </head>
+
+  <body class="relative">
+    <nav class="fixed inset-x-0 border-b border-black">
+      <div class="container flex justify-between">
+        <a href="index.html" class="inline-block py-4 md:py-8">
+          <h1
+            class="block h-[18px] w-[85px] overflow-hidden whitespace-nowrap bg-[url('../images/logo.svg')] bg-contain bg-no-repeat indent-[110%] md:h-8 md:w-[190px]"
+          >
+            Coding Home
+          </h1>
+        </a>
+        <div class="flex">
+          <label
+            for="search"
+            class="group flex cursor-pointer items-center gap-6 border-black px-6 md:border-l md:border-r lg:px-12"
+          >
+            <input
+              id="search"
+              class="input hidden md:block lg:w-[288px]"
+              type="text"
+              placeholder="搜尋作品名稱、藝術家名稱"
+            />
+            <i
+              class="fa-solid fa-magnifying-glass text-2xl group-hover:text-primary"
+            ></i>
+          </label>
+          <button type="button">
+            <i class="fa-solid fa-bars text-lg md:hidden"></i>
+          </button>
+          <!-- 漢堡選單 -->
+
+          <div
+            class="fixed inset-x-0 top-[51px] bg-white px-3 pb-6 md:static md:flex md:bg-transparent md:px-0 md:pb-0"
+          >
+            <ul class="flex flex-col md:flex-row">
+              <li class="border-b border-black md:border-b-0 md:border-r">
+                <a
+                  href="#"
+                  class="flex h-full items-center justify-center py-8 px-12 align-middle text-lg font-bold hover:bg-primary hover:text-white md:py-0 md:text-base"
+                  >探索</a
+                >
+              </li>
+              <li class="border-black md:border-r">
+                <a
+                  href="#"
+                  class="flex h-full items-center justify-center py-8 px-12 text-lg font-bold hover:bg-primary hover:text-white md:py-0 md:text-base"
+                  >市值</a
+                >
+              </li>
+            </ul>
+            <a
+              href="#"
+              class="flex items-center justify-center border border-black bg-primary py-3 text-white md:border-0 md:bg-transparent md:py-0 md:pl-12 md:text-black md:hover:text-primary"
+            >
+              <i class="fa-solid fa-wallet hidden text-2xl md:block"></i>
+              <span class="text-lg md:hidden">連結錢包</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="pt-[104px]"></main>
+
+    <footer></footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>
