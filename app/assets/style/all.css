@@ -23,8 +23,9 @@
 
 @layer components {
   .btn {
-    @apply relative w-[132px] border border-black py-2 text-center text-lg after:absolute after:right-0 after:bottom-0 after:border-r-[16px] after:border-t-[16px] after:border-primary after:border-t-transparent after:content-[''] hover:bg-primary hover:text-white hover:after:border-black hover:after:border-t-transparent;
+    @apply relative w-[132px] border border-black py-2 text-center text-lg after:absolute after:right-0 after:bottom-0 after:border-r-[16px] after:border-t-[16px] after:border-primary after:border-t-transparent after:content-[''];
   }
+
   .input {
     @apply w-full border border-transparent bg-transparent focus:border-transparent focus:ring focus:ring-transparent;
   }
