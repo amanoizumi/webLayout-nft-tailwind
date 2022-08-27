@@ -24,37 +24,51 @@
   </head>
 
   <body class="relative">
-    <nav class="fixed inset-x-0 border-b border-black">
-      <div class="container flex justify-between">
-        <a href="index.html" class="inline-block py-4 md:py-8">
+    <nav class="fixed inset-x-0 h-[49px] border-b border-black md:h-[104px]">
+      <div class="container flex h-full justify-between">
+        <a href="index.html" id="logo" class="flex items-center">
           <h1
             class="block h-[18px] w-[85px] overflow-hidden whitespace-nowrap bg-[url('../images/logo.svg')] bg-contain bg-no-repeat indent-[110%] md:h-8 md:w-[190px]"
           >
             Coding Home
           </h1>
         </a>
-        <div class="flex">
+        <button
+          id="angleLeftBtn"
+          type="button"
+          class="hidden pr-4 hover:text-primary"
+        >
+          <i class="fa-solid fa-angle-left"></i>
+        </button>
+
+        <div class="md:flex-0 flex flex-1 justify-end">
           <label
             for="search"
-            class="group flex cursor-pointer items-center gap-6 border-black px-6 md:border-l md:border-r lg:px-12"
+            class="group flex flex-1 cursor-pointer items-center justify-end gap-6 border-black px-6 md:flex-initial md:border-l md:border-r lg:px-12"
           >
             <input
-              id="search"
+              id="searchInput"
               class="input hidden md:block lg:w-[288px]"
               type="text"
               placeholder="搜尋作品名稱、藝術家名稱"
             />
-            <i
-              class="fa-solid fa-magnifying-glass text-2xl group-hover:text-primary"
-            ></i>
+            <button type="button" id="toggleSearchInput">
+              <i
+                class="fa-solid fa-magnifying-glass text-2xl group-hover:text-primary"
+              ></i>
+            </button>
           </label>
-          <button type="button">
+          <button
+            type="button"
+            class="hover:text-primary"
+            id="toggleNavDropdown"
+          >
             <i class="fa-solid fa-bars text-lg md:hidden"></i>
           </button>
           <!-- 漢堡選單 -->
-
           <div
-            class="fixed inset-x-0 top-[51px] bg-white px-3 pb-6 md:static md:flex md:bg-transparent md:px-0 md:pb-0"
+            class="fixed inset-x-0 top-[49px] hidden bg-white px-3 pb-6 md:static md:flex md:bg-transparent md:px-0 md:pb-0"
+            id="navDropdown"
           >
             <ul class="flex flex-col md:flex-row">
               <li class="border-b border-black md:border-b-0 md:border-r">
