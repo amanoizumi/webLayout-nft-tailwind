@@ -15,13 +15,15 @@
     font-family: "Paytone One", sans-serif;
   }
 }
+@layer utilities {
+  .wm-vertical-lr {
+    writing-mode: vertical-lr;
+  }
+}
 
 @layer components {
   .btn {
-    @apply rounded-lg ring-1 ring-white ring-offset-0 hover:bg-transparent  hover:bg-gradient-to-r hover:from-secondary hover:to-primary hover:ring-transparent;
-  }
-  .btn-gradient {
-    @apply rounded-lg bg-gradient-to-r from-secondary to-primary;
+    @apply relative w-[132px] border border-black py-2 text-center text-lg after:absolute after:right-0 after:bottom-0 after:border-r-[16px] after:border-t-[16px] after:border-primary after:border-t-transparent after:content-[''] hover:bg-primary hover:text-white hover:after:border-black hover:after:border-t-transparent;
   }
   .input {
     @apply w-full border border-transparent bg-transparent focus:border-transparent focus:ring focus:ring-transparent;
